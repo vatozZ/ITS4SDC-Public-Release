@@ -7,7 +7,7 @@ To run machine-learning test case predictors, use SDC-Scissor with the following
 
 https://sdc-scissor.readthedocs.io/en/latest/user_documentation/machine_learning.html
 
-main.py file is the ITS4SDC competition file. It uses the ".onnx" model to predict new unseen test cases.
+**main.py** file is the ITS4SDC competition file. It uses the ".onnx" model to predict new unseen test cases.
 
 **"model_full_10000.h5"** is the trained model. The model was trained using 10000 test cases. 
 
