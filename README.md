@@ -2,6 +2,8 @@ Replication package of the ITS4SDC tool evaluation.
 
 The dataset of the test cases can be found using the following link:
 https://zenodo.org/records/14599223
+The dataset contains 10000 test cases. A test case contains [(x,y), (x,y), ..., (x,y)] road coordinates as a list and interpolated road coordinates to create texture as an asphalt plane in the simulator.
+BeamNG.tech v24 is used as a simulation environment to label data. As a bridge between road coordinates and BeamNG.tech, SDC-Scissor is used.
 
 To run machine-learning test case predictors, use SDC-Scissor with the following link:
 
