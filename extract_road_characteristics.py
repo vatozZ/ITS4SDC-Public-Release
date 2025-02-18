@@ -9,14 +9,20 @@ It saves the features in a JSON file.
 @vatozZ
 """
 
-filename = 'dataset_10000.json'
-
 import pandas as pd
 import json
 import numpy as np
 import matplotlib.pyplot as plt
+import argparse
 
-with open(filename, 'r') as f:
+parser = argparse.ArgumentParser(description='Feature Extractor.')
+parser.add_argument('--test_suite_name', type=str, help='Provide test suite file name.')
+
+args = parser.parse_args()
+
+test_suite_filename = args.test_suite_name
+
+with open(test_suite_filename, 'r') as f:
     jsondata = json.load(f)
 
 segment_angles_all_list = []
@@ -50,10 +56,10 @@ for test_case in jsondata:
     elif test_case['test_outcome'] == 'PASS': label_list.append(1)
     else: quit("ERROR!")
 
-with open(filename.split('.json')[0] + '_road_characteristics.json', 'w') as f:
+with open(test_suite_filename.split('.json')[0] + '_road_characteristics.json', 'w') as f:
     json.dump(
         {'segment_angles': segment_angles_all_list,
          'segment_lengths': segment_lengths_all_list,
          'labels': label_list}, f, indent=4)
 
-print("Pre Processing and Saving Has Completed!")
+print("Road features are extracted successfully!")
