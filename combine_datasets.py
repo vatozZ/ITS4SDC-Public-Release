@@ -17,6 +17,7 @@ import numpy as np
 from shapely.geometry import LineString
 from numpy import arange
 import pandas as pd
+from scipy.interpolate import interp1d
 
 def adjust_array_size(array, target_size=197):
     
