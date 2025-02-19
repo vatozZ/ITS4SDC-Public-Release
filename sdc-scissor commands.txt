@@ -1,0 +1,52 @@
+SDC-Scissor Usage.
+
+Note that sdc-scissor is available: https://sdc-scissor.readthedocs.io/en/latest/index.html
+
+(It is better to use main documentation website.)
+
+Install sdc-scissor using the following command:
+
+$ pip install sdc-scissor
+
+If you installed this package inside of a virtual environment, do not forget to source the activate file before executing sdc-scissor commands.
+
+Check if sdc-scissor is working properly:
+
+$ sdc-scissor --help
+
+If you get any error, check out the frequently asked questions at: https://sdc-scissor.readthedocs.io/en/latest/index.html
+
+Step-1: Extract features from the test cases
+
+$ sdc-scissor extract-features --test C:\Users\monster\Desktop\Dataset1\ 
+
+
+Run the following command inside of the dataset folder:
+
+$ sdc-scissor evaluate-models --csv road_features.csv
+
+The output will be following on the terminal:
+
+INFO:root:evaluate
+INFO:root:Use attributes: ['full_road_diversity', 'mean_road_diversity', 'direct_distance', 'max_angle', 'max_pivot_off', 'mean_angle', 'mean_pivot_off', 'median_angle', 'median_pivot_off', 'min_angle', 'min_pivot_off', 'num_l_turns', 'num_r_turns', 'num_straights', 'road_distance', 'std_angle', 'std_pivot_off', 'total_angle', 'safety']
+INFO:root:rows: 10000
+INFO:root:save_models
+INFO:root:save model: random_forest
+INFO:root:save model: gradient_boosting
+INFO:root:save model: SVM
+INFO:root:save model: gaussian_naive_bayes
+INFO:root:save model: logistic_regression
+INFO:root:save model: decision_tree
+----------------------------------------------------------------------------------------
+    random_forest     | acc: 0.628400 | prec: 0.661219 | rec: 0.811127 | f1: 0.728478 |
+----------------------------------------------------------------------------------------
+  gradient_boosting   | acc: 0.635800 | prec: 0.648812 | rec: 0.888402 | f1: 0.749890 |
+----------------------------------------------------------------------------------------
+         SVM          | acc: 0.635500 | prec: 0.653095 | rec: 0.868391 | f1: 0.745463 |
+----------------------------------------------------------------------------------------
+ gaussian_naive_bayes | acc: 0.575400 | prec: 0.670252 | rec: 0.609081 | f1: 0.638133 |
+----------------------------------------------------------------------------------------
+ logistic_regression  | acc: 0.637300 | prec: 0.656100 | rec: 0.861727 | f1: 0.744961 |
+----------------------------------------------------------------------------------------
+    decision_tree     | acc: 0.567100 | prec: 0.649810 | rec: 0.642096 | f1: 0.645763 |
+----------------------------------------------------------------------------------------
