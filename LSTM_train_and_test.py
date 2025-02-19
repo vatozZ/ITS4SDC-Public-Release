@@ -1,6 +1,10 @@
 """
 Model training using k=10 fold cross validation.
 Performance metrics will be stored in the cross_validation_results.csv file.
+
+Table on the paper: Table5: "ITS4SDC’s Performance Metrics Across Setups".
+
+Train and validate on Dataset1 (10000 test cases).
 """
 
 
