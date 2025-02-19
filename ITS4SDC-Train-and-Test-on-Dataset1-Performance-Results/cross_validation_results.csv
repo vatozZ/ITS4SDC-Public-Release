@@ -1,0 +1,14 @@
+fold,accuracy,precision,recall,f1_score,confusion_matrix_file
+1,0.867,0.872340426,0.906462585,0.889074229,confusion_matrices/confusion_matrix_fold_1.png
+2,0.881,0.901345291,0.919207317,0.910188679,confusion_matrices/confusion_matrix_fold_2.png
+3,0.885,0.888372093,0.930194805,0.908802538,confusion_matrices/confusion_matrix_fold_3.png
+4,0.887,0.885400314,0.933774834,0.9089444,confusion_matrices/confusion_matrix_fold_4.png
+5,0.882,0.899838449,0.908646003,0.904220779,confusion_matrices/confusion_matrix_fold_5.png
+6,0.841,0.878594249,0.868878357,0.873709293,confusion_matrices/confusion_matrix_fold_6.png
+7,0.881,0.883415435,0.918088737,0.90041841,confusion_matrices/confusion_matrix_fold_7.png
+8,0.851,0.8752,0.885113269,0.880128721,confusion_matrices/confusion_matrix_fold_8.png
+9,0.881,0.888,0.918874172,0.903173312,confusion_matrices/confusion_matrix_fold_9.png
+10,0.884,0.918433931,0.895071542,0.906602254,confusion_matrices/confusion_matrix_fold_10.png
+,,,,,
+,,,,,
+,0.874,0.889094019,0.908431162,0.898526261,
