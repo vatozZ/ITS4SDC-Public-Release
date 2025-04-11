@@ -1,4 +1,4 @@
-Replication package of the ITS4SDC tool evaluation.
+**I**ntelligent **T**est **S**elector **for** **S**elf-**D**riving **C**ars **(ITS4SDC)** 
 
 The dataset of the test cases can be found using the following link:
 https://zenodo.org/records/14599223
